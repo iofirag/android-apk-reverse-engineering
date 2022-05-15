@@ -26,7 +26,6 @@ Flow:
 	$ "C:\Program Files\Java\jdk-18.0.1.1\bin\jarsigner.exe" -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ~/.android/debug.keystore algorithms.apk androiddebugkey  
 	(pass: android)  
 10. install the apk.  
-##########################################  
   
 paths:  
 ------  
