@@ -1,6 +1,7 @@
 References:  
 -----------  
 Guide:		https://chris-yn-chen.medium.com/apk-reverse-engineering-df7ed8cec191  
+		https://resources.infosecinstitute.com/topic/android-penetration-tools-walkthrough-series-apktool/  
 jdk:		https://www.oracle.com/java/technologies/downloads/  
 apktool:	https://ibotpeaches.github.io/Apktool/  
 jadx:		https://github.com/skylot/jadx  
