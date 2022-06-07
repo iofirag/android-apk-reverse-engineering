@@ -25,6 +25,7 @@ Reverse engineering:
 0. install and place tools (jdk, apktool, jadx)  
 1. decompile apk  
 	$ apktool d algorithms.apk  
+	(optional: without parsing resources) apktool -r d algorithms.apk  
 2. open with jadx decompiled apk folder  
 	$ jadx-gui.bat algorithms.apk  
 3. find the java files that need to be change..  
