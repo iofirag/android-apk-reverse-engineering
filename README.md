@@ -46,11 +46,12 @@ Disconnect pc from smartphone:
 
 paths:  
 ------  
-C:\Program Files\Java\jdk-18.0.1.1\bin\keytool.exe  
-C:\Program Files\Java\jdk-18.0.1.1\bin\jarsigner.exe  
-C:\Users\Ofir\Downloads\jadx-1.3.5\bin\jadx-gui.bat  
-C:\Windows\apktool.bat  
-C:\Windows\apktool.jar  
+adb 			- C:\platform-tools\adb.exe  
+apktool.bat  	- C:\apk-tools\apktool.bat, C:\apk-tools\apktool.jar  
+jadx-gui 		- C:\Users\Ofir\Downloads\jadx-1.3.5\bin\jadx-gui.bat  
+keytool 		- C:\Program Files\Java\jdk-18.0.1.1\bin\keytool.exe  
+jarsigner 		- C:\Program Files\Java\jdk-18.0.1.1\bin\jarsigner.exe  
+
 C:\Users\Ofir\.android\debug.keystore  
 C:\Users\Ofir\Documents\decompile-algo-explain-app  
   
