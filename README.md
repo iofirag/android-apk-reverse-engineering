@@ -5,6 +5,7 @@ jdk:		https://www.oracle.com/java/technologies/downloads/
 apktool:	https://ibotpeaches.github.io/Apktool/  
 jadx:		https://github.com/skylot/jadx  
 (optional) keystore-explorer:	https://keystore-explorer.org/  
+(optional) all in one: https://www.mediafire.com/file/u6a3r3oz2j52ihs/get-apk-source-win.zip/file  
   
 Connect pc to smartphone:  
 -----  
