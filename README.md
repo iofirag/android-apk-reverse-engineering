@@ -57,3 +57,12 @@ jarsigner 		- C:\Program Files\Java\jdk-18.0.1.1\bin\jarsigner.exe
 C:\Users\Ofir\.android\debug.keystore  
 C:\Users\Ofir\Documents\decompile-algo-explain-app  
   
+Q.A:  
+------  
+if there is build errors:  
+apktool -r d *.apk  
+  
+just add -r .  
+  
+-r, --no-res  
+This will prevent the decompile of resources. This keeps the resources.arsc intact without any decode. If only editing Java (smali) then this is the recommended action for faster decompile & rebuild  
