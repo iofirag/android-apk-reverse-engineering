@@ -6,7 +6,19 @@ apktool:	https://ibotpeaches.github.io/Apktool/
 jadx:		https://github.com/skylot/jadx  
 (optional) keystore-explorer:	https://keystore-explorer.org/  
   
-Flow:  
+Connect pc to smartphone:  
+-----  
+0. Android > Settings > Developer options > USB debugging | Wireless debugging
+1. adb connect <ip_address:port>
+
+Get APK:  
+-----  
+0. export apk with dedicated apps like "Apk Extractor"
+or  
+0. adb shell pm list packages -f | grep "<app_name>"
+1. adb pull <apk_path> .
+
+Reverse engineering:  
 -----  
 0. install and place tools (jdk, apktool, jadx)  
 1. decompile apk  
@@ -27,6 +39,11 @@ Flow:
 	(pass: android)  
 10. install the apk.  
   
+Disconnect pc from smartphone:  
+-----  
+0. notifications > stop
+1. adb disconnect
+
 paths:  
 ------  
 C:\Program Files\Java\jdk-18.0.1.1\bin\keytool.exe  
