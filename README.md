@@ -48,7 +48,7 @@ paths:
 ------  
 adb 			- C:\platform-tools\adb.exe  
 apktool.bat  		- C:\apk-tools\apktool.bat, C:\apk-tools\apktool.jar  
-jadx-gui.bat 		- C:\Users\Ofir\Downloads\jadx-1.3.5\bin\jadx-gui.bat  
+jadx-gui.bat 		- C:\jadx\bin\jadx-gui.bat  
 keytool 		- C:\Program Files\Java\jdk-18.0.1.1\bin\keytool.exe  
 jarsigner 		- C:\Program Files\Java\jdk-18.0.1.1\bin\jarsigner.exe  
 
