@@ -36,9 +36,9 @@ Reverse engineering:
 	$ apktool b algorithms  
 8. * generate debug key if not exist:  
 	https://coderwall.com/p/r09hoq/android-generate-release-debug-keystores  
-	$ "C:\Program Files\Java\jdk-18.0.1.1\bin\keytool.exe" -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000  
+	$ keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000  
 9. sign the generated apk that under dist/..  
-	$ "C:\Program Files\Java\jdk-18.0.1.1\bin\jarsigner.exe" -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ~/.android/debug.keystore algorithms/dist/algorithms.apk androiddebugkey  
+	$ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ~/.android/debug.keystore algorithms/dist/algorithms.apk androiddebugkey  
 	(pass: android)  
 10. install the apk.  
   
