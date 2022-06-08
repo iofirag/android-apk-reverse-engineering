@@ -41,6 +41,7 @@ Reverse engineering:
 	$ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ~/.android/debug.keystore algorithms/dist/algorithms.apk androiddebugkey  
 	(pass: android)  
 10. install the apk.  
+        $ adb install algorithms/dist/algorithms.apk
   
 Disconnect pc from smartphone:  
 -----  
