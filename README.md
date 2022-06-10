@@ -44,8 +44,8 @@ Sign APK:
 	$ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ~/.android/debug.keystore algorithms/dist/algorithms.apk androiddebugkey  
 	(pass: android)  
 	(from android 7 should use scheme v2 for signing apk, so use apksigner:  
-	$ zipalign -p 4 recompiled.apk recompiled-aligned.apk
-	$ apksigner.bat sign --ks ~/.android/debug.keystore recompiled.apk
+	$ zipalign -p 4 recompiled.apk recompiled-aligned.apk  
+	$ apksigner.bat sign --ks ~/.android/debug.keystore recompiled.apk  
 	
 install APK:  
 -----  
