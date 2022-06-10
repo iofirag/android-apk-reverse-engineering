@@ -78,3 +78,4 @@ just add -r .
 This will prevent the decompile of resources. This keeps the resources.arsc intact without any decode. If only editing Java (smali) then this is the recommended action for faster decompile & rebuild  
 
 https://stackoverflow.com/questions/10930331/how-to-sign-an-already-compiled-apk  
+https://medium.com/@sandeepcirusanagunla/decompile-and-recompile-an-android-apk-using-apktool-3d84c2055a82  
