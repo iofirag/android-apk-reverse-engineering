@@ -34,20 +34,26 @@ Reverse engineering:
 6. save the files  
 7. build the files  
 	$ apktool b algorithms  
-8. * generate debug key if not exist:  
+  
+Sign APK:  
+-----  
+0. * generate debug key if not exist:  
 	https://coderwall.com/p/r09hoq/android-generate-release-debug-keystores  
 	$ keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000  
-9. sign the generated apk that under dist/..  
+1. sign the generated apk that under dist/..  
 	$ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ~/.android/debug.keystore algorithms/dist/algorithms.apk androiddebugkey  
 	(pass: android)  
-10. install the apk.  
-        $ adb install algorithms/dist/algorithms.apk
+	
+install APK:  
+-----  
+1. install the apk.  
+        $ adb install algorithms/dist/algorithms.apk  
   
 Disconnect pc from smartphone:  
 -----  
 0. notifications > stop
 1. adb disconnect
-
+  
 paths:  
 ------  
 adb 			- C:\platform-tools\adb.exe  
@@ -68,3 +74,5 @@ just add -r .
   
 -r, --no-res  
 This will prevent the decompile of resources. This keeps the resources.arsc intact without any decode. If only editing Java (smali) then this is the recommended action for faster decompile & rebuild  
+
+https://stackoverflow.com/questions/10930331/how-to-sign-an-already-compiled-apk  
