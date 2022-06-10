@@ -44,13 +44,14 @@ Sign APK:
 	$ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ~/.android/debug.keystore algorithms/dist/algorithms.apk androiddebugkey  
 	(pass: android)  
 	(from android 7 should use scheme v2 for signing apk, so use apksigner:  
-	$ "C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\zipalign.exe" -p 4 recompiled.apk recompiled-aligned.apk  
-	$ "C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\apksigner.bat" sign --ks ~/.android/debug.keystore recompiled.apk  
+	$ "C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\zipalign.exe" -p 4 adb-fotoo/dis
+t/adb-fotoo.apk adb-fotoo/dist/adb-fotoo-aligned.apk
+	$ "C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\apksigner.bat" sign --ks-key-alias androiddebugkey --ks ~/.android/debug.keystore adb-fotoo/dist/adb-fotoo-aligned.apk
 	
 install APK:  
 -----  
 1. install the apk.  
-        $ adb install algorithms/dist/algorithms.apk  
+        $ adb install "C:\Users\Ofir\Documents\decompile-fotoo-app\adb-fotoo\dist\adb-fotoo-aligned.apk"
   
 Disconnect pc from smartphone:  
 -----  
