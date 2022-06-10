@@ -63,6 +63,8 @@ apktool.bat  		- C:\apk-tools\apktool.bat, C:\apk-tools\apktool.jar
 jadx-gui.bat 		- C:\jadx\bin\jadx-gui.bat  
 keytool 		- C:\Program Files\Java\jdk-18.0.1.1\bin\keytool.exe  
 jarsigner 		- C:\Program Files\Java\jdk-18.0.1.1\bin\jarsigner.exe  
+apksigner.bat		- C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\apksigner
+zipalign		- "C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\zipalign
 
 C:\Users\Ofir\.android\debug.keystore  
 C:\Users\Ofir\Documents\decompile-algo-explain-app  
