@@ -44,7 +44,7 @@ Sign APK:
 	$ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ~/.android/debug.keystore algorithms/dist/algorithms.apk androiddebugkey  
 	(pass: android)  
 	(from android 7 should use scheme v2 for signing apk, so use apksigner:  
-	$ "C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\apksigner.bat" sign --ks ~/.android/debug.keystore adb-fotoo.apk  
+	$ "C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\apksigner.bat" sign --ks ~/.android/debug.keystore adb-fotoo/dist/adb-fotoo.apk   
 	
 install APK:  
 -----  
