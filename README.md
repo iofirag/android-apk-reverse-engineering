@@ -49,11 +49,12 @@ Sign APK:
 0. * generate debug key if not exist:  
 	https://coderwall.com/p/r09hoq/android-generate-release-debug-keystores  
 	$ keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000  
-1. sign the generated apk that under dist/..  
+1. align the apk that under dist/..  
 	(pass: android)  
 	(from android 7 should use scheme v2 for signing apk, so use apksigner:  
 	$ "C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\zipalign.exe" -p 4 fotoo/dist/fotoo.apk fotoo/dist/fotoo-aligned.apk  
-	$ "C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\apksigner.bat" sign --ks-key-alias androiddebugkey --ks ~/.android/debug.keystore fotoo/dist/fotoo-aligned.apk  
+2. sign the generated apk that under dist/..  
+        $ "C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\apksigner.bat" sign --ks-key-alias androiddebugkey --ks ~/.android/debug.keystore fotoo/dist/fotoo-aligned.apk  
 	
 install APK:  
 -----  
