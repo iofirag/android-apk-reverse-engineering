@@ -39,6 +39,11 @@ Reverse engineering:
 7. build the files  
 	$ apktool b algorithms -o recompiled.apk  
   
+Google api key:  
+-----
+0. show your keystore in sha-1 & sha-256  
+       $ keytool -keystore ~/.android/debug.keystore -list -v  
+
 Sign APK:  
 -----  
 0. * generate debug key if not exist:  
@@ -47,13 +52,13 @@ Sign APK:
 1. sign the generated apk that under dist/..  
 	(pass: android)  
 	(from android 7 should use scheme v2 for signing apk, so use apksigner:  
-	$ zipalign -p 4 adb-fotoo/dist/adb-fotoo.apk adb-fotoo/dist/adb-fotoo-aligned.apk  
-	$ apksigner.bat sign --ks-key-alias androiddebugkey --ks ~/.android/debug.keystore adb-fotoo/dist/adb-fotoo-aligned.apk  
+	$ "C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\zipalign.exe" -p 4 fotoo/dist/fotoo.apk fotoo/dist/fotoo-aligned.apk  
+	$ "C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\apksigner.bat" sign --ks-key-alias androiddebugkey --ks ~/.android/debug.keystore fotoo/dist/fotoo-aligned.apk  
 	
 install APK:  
 -----  
 1. install the apk.  
-        $ adb install "C:\Users\Ofir\Documents\decompile-fotoo-app\adb-fotoo\dist\adb-fotoo-aligned.apk"  
+        $ adb install "C:\Users\Ofir\Documents\decompile-fotoo-app\fotoo\dist\fotoo-aligned.apk"  
   
 Disconnect pc from smartphone:  
 -----  
@@ -68,7 +73,7 @@ jadx-gui.bat 		- C:\jadx\bin\jadx-gui.bat
 keytool 		- C:\Program Files\Java\jdk-18.0.1.1\bin\keytool.exe  
 jarsigner 		- C:\Program Files\Java\jdk-18.0.1.1\bin\jarsigner.exe  
 apksigner.bat		- C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\apksigner.bat  
-zipalign		- "C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\zipalign.exe  
+zipalign		- C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\zipalign.exe  
 
 C:\Users\Ofir\.android\debug.keystore  
 C:\Users\Ofir\Documents\decompile-algo-explain-app  
