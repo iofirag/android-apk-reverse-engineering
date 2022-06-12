@@ -45,7 +45,6 @@ Sign APK:
 	https://coderwall.com/p/r09hoq/android-generate-release-debug-keystores  
 	$ keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000  
 1. sign the generated apk that under dist/..  
-	$ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ~/.android/debug.keystore algorithms/dist/algorithms.apk androiddebugkey  
 	(pass: android)  
 	(from android 7 should use scheme v2 for signing apk, so use apksigner:  
 	$ zipalign -p 4 adb-fotoo/dist/adb-fotoo.apk adb-fotoo/dist/adb-fotoo-aligned.apk  
@@ -83,6 +82,8 @@ just add -r .
   
 -r, --no-res  
 This will prevent the decompile of resources. This keeps the resources.arsc intact without any decode. If only editing Java (smali) then this is the recommended action for faster decompile & rebuild  
+
+$ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ~/.android/debug.keystore algorithms/dist/algorithms.apk androiddebugkey  
 
 https://stackoverflow.com/questions/10930331/how-to-sign-an-already-compiled-apk  
 https://medium.com/@sandeepcirusanagunla/decompile-and-recompile-an-android-apk-using-apktool-3d84c2055a82  
