@@ -48,9 +48,8 @@ Sign APK:
 	$ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ~/.android/debug.keystore algorithms/dist/algorithms.apk androiddebugkey  
 	(pass: android)  
 	(from android 7 should use scheme v2 for signing apk, so use apksigner:  
-	$ "C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\zipalign.exe" -p 4 adb-fotoo/dis
-t/adb-fotoo.apk adb-fotoo/dist/adb-fotoo-aligned.apk  
-	$ "C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\apksigner.bat" sign --ks-key-alias androiddebugkey --ks ~/.android/debug.keystore adb-fotoo/dist/adb-fotoo-aligned.apk  
+	$ zipalign -p 4 adb-fotoo/dist/adb-fotoo.apk adb-fotoo/dist/adb-fotoo-aligned.apk  
+	$ apksigner.bat sign --ks-key-alias androiddebugkey --ks ~/.android/debug.keystore adb-fotoo/dist/adb-fotoo-aligned.apk  
 	
 install APK:  
 -----  
@@ -69,8 +68,8 @@ apktool.bat  		- C:\apk-tools\apktool.bat, C:\apk-tools\apktool.jar
 jadx-gui.bat 		- C:\jadx\bin\jadx-gui.bat  
 keytool 		- C:\Program Files\Java\jdk-18.0.1.1\bin\keytool.exe  
 jarsigner 		- C:\Program Files\Java\jdk-18.0.1.1\bin\jarsigner.exe  
-apksigner.bat		- C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\apksigner
-zipalign		- "C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\zipalign
+apksigner.bat		- C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\apksigner.bat  
+zipalign		- "C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\zipalign.exe  
 
 C:\Users\Ofir\.android\debug.keystore  
 C:\Users\Ofir\Documents\decompile-algo-explain-app  
