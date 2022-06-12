@@ -10,6 +10,7 @@ jadx:		https://github.com/skylot/jadx
   
 pre:  
 0. update your android sdk to the latest!!!!!  
+1. validate apk is ok and workimg by installing it (if not, download it from apkpure  
 
 Connect pc to smartphone:  
 -----  
