@@ -28,16 +28,16 @@ Reverse engineering:
 -----  
 0. install and place tools (jdk, apktool, jadx)  
 1. decompile apk  
-	$ apktool d algorithms.apk  
-	(optional: without parsing resources) apktool -r d algorithms.apk  
+	$ apktool d fotoo.apk  
+	(optional: without parsing resources) apktool -r d fotoo.apk  
 2. open with jadx decompiled apk folder  
-	$ jadx-gui.bat algorithms.apk  
+	$ jadx-gui.bat fotoo.apk  
 3. find the java files that need to be change..  
 4. find the samli chanes adapt to the java files  
 5. change the samli files manually by any aditor  
 6. save the files  
 7. build the files  
-	$ apktool b algorithms -o recompiled.apk  
+	$ apktool b fotoo (-o recompiled.apk)  
   
 Google api key:  
 -----
