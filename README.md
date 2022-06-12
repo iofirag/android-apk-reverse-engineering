@@ -8,6 +8,9 @@ jadx:		https://github.com/skylot/jadx
 (optional) keystore-explorer:	https://keystore-explorer.org/  
 (optional) all in one: https://www.mediafire.com/file/u6a3r3oz2j52ihs/get-apk-source-win.zip/file  
   
+pre:  
+0. update your android sdk to the latest!!!!!  
+
 Connect pc to smartphone:  
 -----  
 0. Android > Settings > Developer options > USB debugging | Wireless debugging
