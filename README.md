@@ -39,12 +39,9 @@ Reverse engineering:
 7. build the files  
 	$ apktool b fotoo (-o recompiled.apk)  
   
-Google api key:  
------
-0. show your keystore in sha-1 & sha-256  
-       $ keytool -keystore ~/.android/debug.keystore -list -v  
+ 
 
-Sign APK:  
+Google api key:  
 -----  
 0. * generate debug key if not exist:  
 	https://coderwall.com/p/r09hoq/android-generate-release-debug-keystores  
@@ -52,12 +49,16 @@ Sign APK:
 
 	* show your keystore in sha-1 & sha-256  
        $ keytool -keystore ~/.android/debug.keystore -list -v  
+       ("%USERPROFILE%\.android\debug.keystore")  
 	   
 1. align the apk that under dist/..  
 	(pass: android)  
 	(from android 7 should use scheme v2 for signing apk, so use apksigner:  
 	$ "C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\zipalign.exe" -p 4 fotoo/dist/fotoo.apk fotoo/dist/fotoo-aligned.apk  
-2. sign the generated apk that under dist/..  
+	
+Google api key: 
+-----  
+0. sign the generated apk under dist/..  
         $ "C:\Users\Ofir\AppData\Local\Android\Sdk\build-tools\32.0.0\apksigner.bat" sign --ks-key-alias androiddebugkey --ks ~/.android/debug.keystore fotoo/dist/fotoo-aligned.apk  
 	
 install APK:  
