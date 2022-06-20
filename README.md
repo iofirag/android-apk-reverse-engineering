@@ -49,6 +49,10 @@ Sign APK:
 0. * generate debug key if not exist:  
 	https://coderwall.com/p/r09hoq/android-generate-release-debug-keystores  
 	$ keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000  
+
+	* show your keystore in sha-1 & sha-256  
+       $ keytool -keystore ~/.android/debug.keystore -list -v  
+	   
 1. align the apk that under dist/..  
 	(pass: android)  
 	(from android 7 should use scheme v2 for signing apk, so use apksigner:  
