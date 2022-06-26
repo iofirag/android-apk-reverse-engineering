@@ -35,8 +35,30 @@ Reverse engineering:
 3. find the java files that need to be change..  
 4. find the samli chanes adapt to the java files  
 5. change the samli files manually by any aditor  
-6. save the files  
-7. build the files  
+6. /AndroidManifest.xml:  
+	com.google.android.geo.API_KEY 				(same)  
+	com.google.android.gms.ads.APPLICATION_ID  
+	intent filter: <data android:scheme=  
+/res/values/strings.xml:  
+	google_api_key 								(same)  
+	google_app_id  
+	google_crash_reporting_api_key 				(same)  
+	gcm_defaultSenderId  
+	default_web_client_id  
+	google_storage_bucket  
+*.smali:  
+	google api key value  
+	
+change (3 places) google API_KEY with new api_key from google-services  
+change with new mobilesdk_app_id from google-services  
+change default_web_client_id with id from google console  
+change google_storage_bucket with id from google-services  
+change gcm_defaultSenderId with prefix number of client_id  
+search for <number>-<hash>  
+	from <number>-<hash>.apps.googleusercontent.com  
+	and change it with android <number>-<hash>  
+7. save the files  
+8. build the files  
 	$ apktool b fotoo (-o recompiled.apk)  
   
  
