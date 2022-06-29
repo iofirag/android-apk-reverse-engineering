@@ -120,3 +120,4 @@ $ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ~/.android/de
 
 https://stackoverflow.com/questions/10930331/how-to-sign-an-already-compiled-apk  
 https://medium.com/@sandeepcirusanagunla/decompile-and-recompile-an-android-apk-using-apktool-3d84c2055a82  
+https://stackoverflow.com/questions/36999751/google-signin-not-working-in-release-mode-apk-android  
